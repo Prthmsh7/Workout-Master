@@ -88,15 +88,6 @@ yarn build
 
 The build output will be generated in the `dist` directory.
 
-## 🌐 Deployment on Vercel
-
-This application is optimized for deployment on Vercel. Use the following settings:
-
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
-- **Framework Preset**: Vite
-- **Node.js Version**: 16.x or later
-
 ## 🧠 How It Works
 
 WorkOut Master uses a sophisticated algorithm to generate personalized workouts based on:
@@ -106,16 +97,6 @@ WorkOut Master uses a sophisticated algorithm to generate personalized workouts 
 3. Fitness goals (strength, hypertrophy, endurance)
 
 The application then creates a balanced workout with appropriate sets, reps, and rest periods, drawing from a database of effective exercises. As you complete workouts, the application tracks your progress and stores your history for future reference.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -130,5 +111,3 @@ Project Link: [https://github.com/Prthmsh7/Workout-Master](https://github.com/Pr
 <div align="center">
   <p>Built with ❤️ by Prathmesh</p>
 </div>
-
-
