@@ -1,7 +1,6 @@
 # WorkOut Master
 
 <div align="center">
-  <img src="public/favicon.ico" alt="WorkOut Master Logo" width="100" />
   <h3>Your Personal Workout Generator & Tracker</h3>
 </div>
 
