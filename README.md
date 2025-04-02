@@ -102,10 +102,6 @@ The application then creates a balanced workout with appropriate sets, reps, and
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-Project Link: [https://github.com/Prthmsh7/Workout-Master](https://github.com/Prthmsh7/Workout-Master)
-
 ---
 
 <div align="center">
