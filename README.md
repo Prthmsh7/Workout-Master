@@ -1,80 +1,135 @@
-# Ultimate Gym Training App
+# WorkOut Master
 
-**Ultimate Gym Training App** is a modern, fully responsive web application designed to help users optimize their fitness journey. Built with React and styled using TailwindCSS, this app offers a sleek and intuitive user experience that allows users to track their workouts, set fitness goals, and monitor their progress. Whether you're just starting your fitness journey or you're a seasoned gym-goer, this app is designed to help you stay motivated and organized in your workout routine.
+<div align="center">
+  <img src="public/favicon.ico" alt="WorkOut Master Logo" width="100" />
+  <h3>Your Personal Workout Generator & Tracker</h3>
+</div>
 
-## Key Features:
+## 🏋️‍♂️ Overview
 
-- **Personalized Workout Plans:** Users can create and customize workout routines tailored to their specific fitness goals, such as strength training, weight loss, or muscle gain.
-- **Progress Tracker:** Track your fitness progress over time with graphs and metrics showing improvements in strength, endurance, and overall performance.
-- **Exercise Library:** A comprehensive library of exercises, including detailed instructions and video demonstrations, ensures users can perform each exercise with proper form.
-- **Responsive Design:** The app is built with TailwindCSS, ensuring it looks great and functions flawlessly on devices of all sizes, from mobile phones to large desktop screens.
-- **Goal Setting:** Set achievable fitness goals and milestones to stay motivated and focused on your workout progress.
-- **Workout Reminders:** Set reminders for workouts to ensure you stay on track and maintain a consistent fitness routine.
-- **User Authentication (Optional):** Secure sign-up and login features to allow users to create and manage personal profiles, storing workout data and progress history.
-- **Motivational Insights:** The app includes motivational tips, fitness challenges, and tracking of achievements to keep users engaged and committed.
+**WorkOut Master** is a modern fitness application designed to help users create personalized workout routines, track their progress, and achieve their fitness goals. With an intuitive user interface and smart workout generation, this app is perfect for both beginners and experienced fitness enthusiasts.
 
-## Technologies Used:
+The application features a responsive design with support for both light and dark modes, ensuring a pleasant user experience in any environment.
 
-- **React.js:** For building a dynamic and interactive user interface, offering a fast, responsive experience.
-- **TailwindCSS:** For rapid, utility-first styling that ensures the app is fully responsive, minimal, and visually appealing.
-- **React Router:** To manage navigation and create a seamless experience between different pages of the app.
-- **Firebase (Optional):** For user authentication and data storage (if using Firebase for backend services).
-- **Chart.js or D3.js (Optional):** To display user progress and statistics in an interactive and engaging way.
+## ✨ Features
 
-## Getting Started
+### 🎯 Smart Workout Generation
+- **Multiple Workout Types**: Choose from Individual, Bro Split, Bodybuilder Split, or Upper/Lower workout styles
+- **Targeted Muscle Groups**: Select specific muscle groups to focus on during your workout
+- **Fitness Goal Optimization**: Customize workouts based on your goals (strength, hypertrophy, endurance)
 
-To get a local copy up and running, follow these steps:
+### 📊 Tracking & History
+- **Workout History**: View all your completed workouts
+- **Exercise Tracking**: Track sets, reps, and completion for each exercise
+- **Progress Visualization**: See your workout frequency and trends
+
+### 👤 User Profile
+- **Personal Statistics**: Track workouts completed, streaks, and fitness level
+- **Customizable Profile**: Set your name and fitness level
+- **Achievement Tracking**: Monitor your fitness journey progress
+
+### 🌓 UI/UX Features
+- **Dark/Light Mode**: Choose your preferred theme or use system default
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
+- **Smooth Animations**: Enjoy a polished user experience with transition animations
+- **Local Storage**: Your data is saved locally, so you won't lose your progress
+
+## 🛠️ Technology Stack
+
+- **Frontend Framework**: React.js
+- **Styling**: TailwindCSS with custom animations
+- **State Management**: React Hooks (useState, useEffect)
+- **Data Persistence**: Local Storage API
+- **Build Tool**: Vite
+- **Deployment**: Optimized for Vercel deployment
+
+## 📱 Screenshots
+
+[Add screenshots here]
+
+## 🚀 Getting Started
 
 ### Prerequisites
+- [Node.js](https://nodejs.org/) (v14.0.0 or later)
+- npm or yarn
 
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://npmjs.com/) installed.
-
-## Installation
-
-To get a local copy up and running, follow these steps:
-
-### Prerequisites
-
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://npmjs.com/) installed.
-
-### Steps to Install
+### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ultimate-gym-training-app.git
+   git clone https://github.com/Prthmsh7/Workout-Master.git
+   cd Workout-Master
    ```
 
-2. Navigate into the project directory:
-   ```bash
-   cd ultimate-gym-training-app
-   ```
-
-3. Install the dependencies:
+2. Install dependencies:
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-4. Run the app:
+3. Start the development server:
    ```bash
-   npm start
+   npm run dev
+   # or
+   yarn dev
    ```
 
-The app will open in your default browser, typically at `http://localhost:3000`.
+4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
 
-## License
+### Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+The build output will be generated in the `dist` directory.
+
+## 🌐 Deployment on Vercel
+
+This application is optimized for deployment on Vercel. Use the following settings:
+
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Framework Preset**: Vite
+- **Node.js Version**: 16.x or later
+
+## 🧠 How It Works
+
+WorkOut Master uses a sophisticated algorithm to generate personalized workouts based on:
+
+1. Your selected workout type (Individual, Bro Split, etc.)
+2. Target muscle groups
+3. Fitness goals (strength, hypertrophy, endurance)
+
+The application then creates a balanced workout with appropriate sets, reps, and rest periods, drawing from a database of effective exercises. As you complete workouts, the application tracks your progress and stores your history for future reference.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### MIT License
+## 📞 Contact
 
-MIT License (MIT)
+Project Link: [https://github.com/Prthmsh7/Workout-Master](https://github.com/Prthmsh7/Workout-Master)
 
-Copyright (c) [2025] Sahil Saroj
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is provided to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<div align="center">
+  <p>Built with ❤️ by Prathmesh</p>
+</div>
 
 
