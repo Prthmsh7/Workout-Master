@@ -1,106 +1,115 @@
-# WorkOut Master
+# Workout Master
 
-<div align="center">
-  <h3>Your Personal Workout Generator & Tracker</h3>
-</div>
+A full-stack workout generator and tracker application to help you reach your fitness goals.
 
-## 🏋️‍♂️ Overview
+## Features
 
-**WorkOut Master** is a modern fitness application designed to help users create personalized workout routines, track their progress, and achieve their fitness goals. With an intuitive user interface and smart workout generation, this app is perfect for both beginners and experienced fitness enthusiasts.
+- **User Authentication**: Create accounts, log in, and manage your personal profile
+- **Workout Generator**: Create custom workouts based on muscle groups and fitness goals
+- **Workout History**: Track your completed workouts and see your progress
+- **Profile Management**: Update your personal information and fitness level
+- **Dark Mode**: Toggle between light and dark themes
 
-The application features a responsive design with support for both light and dark modes, ensuring a pleasant user experience in any environment.
+## Technology Stack
 
-## ✨ Features
+### Frontend
+- React
+- Tailwind CSS
+- Axios for API communication
+- Context API for state management
 
-### 🎯 Smart Workout Generation
-- **Multiple Workout Types**: Choose from Individual, Bro Split, Bodybuilder Split, or Upper/Lower workout styles
-- **Targeted Muscle Groups**: Select specific muscle groups to focus on during your workout
-- **Fitness Goal Optimization**: Customize workouts based on your goals (strength, hypertrophy, endurance)
+### Backend
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT for authentication
 
-### 📊 Tracking & History
-- **Workout History**: View all your completed workouts
-- **Exercise Tracking**: Track sets, reps, and completion for each exercise
-- **Progress Visualization**: See your workout frequency and trends
-
-### 👤 User Profile
-- **Personal Statistics**: Track workouts completed, streaks, and fitness level
-- **Customizable Profile**: Set your name and fitness level
-- **Achievement Tracking**: Monitor your fitness journey progress
-
-### 🌓 UI/UX Features
-- **Dark/Light Mode**: Choose your preferred theme or use system default
-- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
-- **Smooth Animations**: Enjoy a polished user experience with transition animations
-- **Local Storage**: Your data is saved locally, so you won't lose your progress
-
-## 🛠️ Technology Stack
-
-- **Frontend Framework**: React.js
-- **Styling**: TailwindCSS with custom animations
-- **State Management**: React Hooks (useState, useEffect)
-- **Data Persistence**: Local Storage API
-- **Build Tool**: Vite
-- **Deployment**: Optimized for Vercel deployment
-
-## 📱 Screenshots
-
-[Add screenshots here]
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v14.0.0 or later)
-- npm or yarn
+
+- Node.js (v14 or newer)
+- MongoDB (local installation or MongoDB Atlas account)
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Prthmsh7/Workout-Master.git
-   cd Workout-Master
+1. Clone the repository
+   ```
+   git clone https://github.com/yourusername/workout-master.git
+   cd workout-master
    ```
 
-2. Install dependencies:
-   ```bash
+2. Install backend dependencies
+   ```
    npm install
-   # or
-   yarn install
    ```
 
-3. Start the development server:
-   ```bash
+3. Install frontend dependencies
+   ```
+   cd frontend
+   npm install
+   ```
+
+### Configuration
+
+1. Create a `.env` file in the root directory with the following variables:
+   ```
+   PORT=5000
+   MONGODB_URI=mongodb://localhost:27017/workout-master
+   JWT_SECRET=yoursecretkey
+   NODE_ENV=development
+   ```
+
+   * Replace `yoursecretkey` with a secure random string
+   * If using MongoDB Atlas, replace the MONGODB_URI with your connection string
+
+### Running the Application
+
+1. Start the backend server
+   ```
+   npm run server
+   ```
+
+2. In a separate terminal, start the frontend
+   ```
+   cd frontend
    npm run dev
-   # or
-   yarn dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
+3. Open your browser and navigate to `http://localhost:5173`
 
-### Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
+Alternatively, run both frontend and backend with one command:
+```
+npm run dev
 ```
 
-The build output will be generated in the `dist` directory.
+## API Endpoints
 
-## 🧠 How It Works
+### Authentication
+- `POST /api/users` - Register a new user
+- `POST /api/users/login` - Log in
+- `POST /api/users/logout` - Log out
+- `GET /api/users/profile` - Get user profile
+- `PUT /api/users/profile` - Update user profile
 
-WorkOut Master uses a sophisticated algorithm to generate personalized workouts based on:
+### Workouts
+- `POST /api/workouts` - Create a new workout
+- `GET /api/workouts` - Get all user workouts
+- `GET /api/workouts/:id` - Get a specific workout
+- `PUT /api/workouts/:id/complete` - Mark workout as completed
+- `DELETE /api/workouts/:id` - Delete a workout
 
-1. Your selected workout type (Individual, Bro Split, etc.)
-2. Target muscle groups
-3. Fitness goals (strength, hypertrophy, endurance)
+## Contributing
 
-The application then creates a balanced workout with appropriate sets, reps, and rest periods, drawing from a database of effective exercises. As you complete workouts, the application tracks your progress and stores your history for future reference.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
