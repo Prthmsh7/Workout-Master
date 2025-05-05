@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from './Button'
 
 function FeatureCard({ icon, title, description, isDarkMode, delay }) {
@@ -44,7 +45,8 @@ function TestimonialCard({ name, role, quote, avatar, isDarkMode, delay }) {
     );
 }
 
-export default function Hero({ isDarkMode, setCurrentView }) {
+export default function Hero({ isDarkMode }) {
+    const navigate = useNavigate();
     const textColor = isDarkMode ? 'text-white' : 'text-gray-800';
     const accentColor = 'text-green-600';
     const secondaryTextColor = isDarkMode ? 'text-gray-300' : 'text-gray-600';
@@ -140,7 +142,7 @@ export default function Hero({ isDarkMode, setCurrentView }) {
                     isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
                 }`}>
                     <Button func={() => {
-                        setCurrentView('generate');
+                        navigate('/generate');
                     }} text={"Create Your Workout"} className="bg-green-600 hover:bg-green-700"></Button>
                 </div>
                 
@@ -223,7 +225,7 @@ export default function Hero({ isDarkMode, setCurrentView }) {
                     
                     <div className="text-center mt-12">
                         <Button 
-                            func={() => { setCurrentView('generate'); }} 
+                            func={() => { navigate('/generate'); }} 
                             text="Start Your Fitness Journey" 
                             className="bg-green-600 hover:bg-green-700"
                         />

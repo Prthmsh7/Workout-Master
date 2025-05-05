@@ -3,6 +3,44 @@
  */
 
 export const WORKOUT_TIPS = [
+  "Stay hydrated before, during, and after your workout.",
+  "Always warm up for 5-10 minutes before starting your main workout.",
+  "Cool down with light stretching after your workout to improve recovery.",
+  "Focus on proper form rather than lifting heavier weights.",
+  "Progress gradually by adding weight or reps over time.",
+  "Rest between 30-90 seconds for hypertrophy, 2-5 minutes for strength.",
+  "Try to breathe out during the exertion phase of an exercise.",
+  "Schedule rest days to allow your muscles to recover and grow.",
+  "Keep a workout journal to track your progress.",
+  "Vary your routine every 4-6 weeks to prevent plateaus.",
+  "Compound exercises like squats and deadlifts give you more bang for your buck.",
+  "Don't skip leg day - your lower body contains the largest muscle groups.",
+  "Mind-muscle connection is key - focus on the muscles you're working.",
+  "Quality reps are better than quantity with poor form.",
+  "If you're new to working out, consider hiring a trainer for a few sessions.",
+  "Listen to your body - sharp pain is different from muscle fatigue.",
+  "For muscle growth, aim to train each muscle group 2-3 times per week.",
+  "The last few reps should be challenging but manageable.",
+  "Use a spotter when lifting heavy weights, especially on bench press.",
+  "Incorporate both pushing and pulling exercises for balanced development."
+];
+
+export const NUTRITION_TIPS = [
+  "Aim for 1.6-2.2g of protein per kg of bodyweight for muscle growth.",
+  "Eat a meal with protein and carbs within 2 hours after your workout.",
+  "Complex carbs provide sustained energy for longer workouts.",
+  "Healthy fats are essential for hormone production, including testosterone.",
+  "Stay hydrated - aim for at least 3-4 liters of water daily.",
+  "Avoid processed foods and focus on whole food sources.",
+  "Eat plenty of fruits and vegetables for micronutrients and fiber.",
+  "Consider a protein shake if you struggle to meet your protein needs.",
+  "Creatine monohydrate is one of the most researched and effective supplements.",
+  "Plan and prep your meals in advance to maintain a consistent diet.",
+  "Don't fear carbs - they're your body's preferred energy source for intense training.",
+  "Consuming protein before bed can help with recovery overnight.",
+  "Eat a balanced meal 2-3 hours before your workout for optimal performance.",
+  "Track your calories if you're trying to gain or lose weight.",
+  "Aim for a variety of protein sources: meat, fish, eggs, dairy, and plant-based options.",
   "Stay hydrated! Drink water before, during, and after your workout.",
   "Proper form is more important than lifting heavy. Focus on technique first.",
   "Track your progress to stay motivated and see how far you've come.",
@@ -17,10 +55,7 @@ export const WORKOUT_TIPS = [
   "Your diet plays a huge role in your results. You can't out-train a poor diet.",
   "Sleep is when your body builds muscle. Aim for 7-9 hours of quality sleep.",
   "Set specific, measurable goals to stay focused and motivated.",
-  "Having a workout buddy can increase accountability and make exercise more fun."
-];
-
-export const NUTRITION_TIPS = [
+  "Having a workout buddy can increase accountability and make exercise more fun.",
   "Protein is essential for muscle recovery. Aim for 1.6-2.2g per kg of bodyweight.",
   "Carbs are your body's preferred energy source. Focus on complex carbs around your workouts.",
   "Healthy fats support hormone production. Include sources like avocados, nuts, and olive oil.",
@@ -65,6 +100,11 @@ export const FITNESS_FACTS = [
 ];
 
 export const getRandomTip = (array) => {
+  // Check if array is valid and has items
+  if (!array || !Array.isArray(array) || array.length === 0) {
+    return "Stay consistent with your workouts for the best results!";
+  }
+  
   const randomIndex = Math.floor(Math.random() * array.length);
   return array[randomIndex];
 };
@@ -128,6 +168,24 @@ export const GOAL_DESCRIPTIONS = {
       "Monitor your heart rate during training",
       "Gradually increase workout duration over time"
     ]
+  },
+  fat_loss: {
+    title: "Fat Loss",
+    description: "Focus on maximizing calorie burn and metabolic rate through high-intensity workouts with minimal rest. This training style combines resistance training with cardio elements for optimal fat burning.",
+    benefits: [
+      "Increased calorie expenditure",
+      "Improved metabolic rate",
+      "Enhanced fat oxidation",
+      "Preservation of lean muscle mass",
+      "Better overall body composition"
+    ],
+    tips: [
+      "Keep rest periods very short (15-30 seconds)",
+      "Use supersets and circuit training to maximize efficiency",
+      "Include both resistance training and cardiovascular elements",
+      "Focus on compound movements that work multiple muscle groups",
+      "Maintain high intensity throughout the workout"
+    ]
   }
 };
 
@@ -144,6 +202,17 @@ export const WORKOUT_TYPE_INFO = {
     ]
   },
   bro_split: {
+    title: "Push/Pull/Legs Split",
+    description: "Divide your training into push movements (chest, shoulders, triceps), pull movements (back, biceps), and leg exercises. This training split balances volume and recovery effectively.",
+    benefits: [
+      "Logical grouping of movements that work together",
+      "Allows for adequate recovery between sessions",
+      "Can train with higher volume per muscle group",
+      "Flexible schedule options (3-6 days per week)",
+      "Good balance of strength and hypertrophy"
+    ]
+  },
+  push_pull_legs: {
     title: "Push/Pull/Legs Split",
     description: "Divide your training into push movements (chest, shoulders, triceps), pull movements (back, biceps), and leg exercises. This training split balances volume and recovery effectively.",
     benefits: [
