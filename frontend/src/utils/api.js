@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 // Enable mock mode for development (set to false when backend is ready)
-const MOCK_MODE = true;
+const MOCK_MODE = false;
+
+// Backend API URL (use environment variable if available)
+const API_URL = import.meta.env.VITE_API_URL || 'https://workout-master-backend.onrender.com';
 
 // Initialize mock data from localStorage if available
 const initializeMockData = () => {
@@ -43,7 +46,7 @@ const saveMockData = () => {
 
 // Create an axios instance with default config
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: `${API_URL}/api`,
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'
