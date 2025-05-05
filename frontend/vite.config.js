@@ -13,6 +13,10 @@ export default defineConfig({
       }
     }
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: false
+  },
   // Load .env files from project root
-  envDir: path.resolve(__dirname, '..')
+  envDir: path.resolve(__dirname, '')
 })
